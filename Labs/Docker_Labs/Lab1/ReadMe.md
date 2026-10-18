@@ -1,5 +1,5 @@
-docker build -t lab1:v1 .
+docker build -t docker_wine .
 
-docker save lab1:v1 > my_image.tar
+docker save docker_wine > wine_train.tar
 
-docker run lab1:v1
+docker run --name docker_wine docker_wine
