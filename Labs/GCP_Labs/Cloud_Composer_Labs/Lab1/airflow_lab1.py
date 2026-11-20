@@ -6,7 +6,7 @@ from google.cloud import bigquery
 
 
 PROJECT = "gcp-lab1-514817"
-FILE = Path(__file__).parent / "top_names.csv"
+FILE = Path("/home/airflow/gcs/data/top_names.csv")
 TABLE = f"{PROJECT}.lab1.top_names"
 
 default_args = {
